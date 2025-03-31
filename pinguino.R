@@ -8,7 +8,7 @@ pinguino_plotto <- ggplot(data = pinguino,
                           aes(x = island,
                               y = body_mass_g,
                               colour = species)) +
-  geom_point() +
+  geom_boxplot() +
   theme_bw() + 
   scale_colour_viridis_d() +
   labs(x = "Island", y = "Body mass (g)", colour = "Species")
