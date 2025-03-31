@@ -21,5 +21,3 @@ pinguino_boxploto <- ggplot(data = pinguino,
   theme_bw() + 
   labs(x = "Island", y = "Body mass (g)", fill = "Species")
 
-pinguino_plotto/pinguino_boxploto
-
