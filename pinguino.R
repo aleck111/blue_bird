@@ -1,5 +1,6 @@
 library(palmerpenguins)
 library(ggplot2)
+library(patchwork)
 
 pinguino <- penguins
 
@@ -9,7 +10,18 @@ pinguino_plotto <- ggplot(data = pinguino,
                               colour = species)) +
   geom_jitter() +
   theme_bw() + 
-  scale_colour_brewer() +
+  scale_colour_viridis_d() +
   labs(x = "Island", y = "Body mass (g)", colour = "Species")
 
 pinguino_plotto
+
+pinguino_boxploto <- ggplot(data = pinguino,
+                            aes(x = species,
+                                y = body_mass_g,
+                                fill = sex)) +
+  geom_boxplot() +
+  theme_bw() + 
+  labs(x = "Island", y = "Body mass (g)", fill = "Species")
+
+pinguino_plotto/pinguino_boxploto
+
