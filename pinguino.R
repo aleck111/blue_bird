@@ -13,8 +13,6 @@ pinguino_plotto <- ggplot(data = pinguino,
   scale_colour_viridis_d() +
   labs(x = "Island", y = "Body mass (g)", colour = "Species")
 
-pinguino_plotto
-
 pinguino_boxploto <- ggplot(data = pinguino,
                             aes(x = species,
                                 y = body_mass_g,
