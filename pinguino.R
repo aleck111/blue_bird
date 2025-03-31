@@ -9,6 +9,7 @@ pinguino_plotto <- ggplot(data = pinguino,
                               colour = species)) +
   geom_jitter() +
   theme_bw() + 
+  scale_colour_viridis_d() +
   labs(x = "Island", y = "Body mass (g)", colour = "Species")
 
 pinguino_plotto
